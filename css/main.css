@@ -1,0 +1,71 @@
+nav{
+  padding: 0 1em;
+  background-color: var(--primary);
+}
+
+nav .nav-menu{
+  display: inline-block;
+  margin: 0;
+}
+
+nav .nav-menu__nav-item{
+  display: inline-block;
+}
+
+nav .nav-menu__nav-item .nav-menu__brand{
+  color: var(--secondary);
+  font-size: 32px;
+  margin: 0 .5em 0 0;
+  position: relative;
+  top: 8px;
+}
+
+nav .nav-menu__nav-link{
+  display: inline-block;
+  font-weight: bold;
+  padding: 1.2em 1em; 
+  color: #ddd; 
+  text-transform: uppercase;
+}
+
+nav .nav-menu__nav-link:hover{
+  border-bottom: .3em solid var(--secondary);
+  color: var(--secondary);
+  padding: .8em 1em .9em; 
+  text-decoration: none;
+}
+
+nav.nav-bottom{
+  background-color: transparent;
+  margin-top: 10px;
+  padding: 0;
+}
+
+nav.nav-bottom .nav-menu{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+nav.nav-bottom .nav-menu__nav-item{
+  display: inline-block;
+}
+
+nav.nav-bottom .nav-menu__nav-link{
+  display: inline-block;
+  margin-right: .8em;
+  padding: 1em .2em; 
+  color: var(--primary); 
+}
+
+nav.nav-bottom .nav-menu__nav-link:hover{
+  border-bottom: .3em solid var(--primary);
+  color: var(--primary);
+  padding: .8em .2em .7em; 
+  text-decoration: none;
+}
+
+header.home-header{
+  background-color: var(--secondary);
+  padding: 1em 0 0 0;
+}
