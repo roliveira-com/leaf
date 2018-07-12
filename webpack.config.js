@@ -10,8 +10,6 @@ const extractPlugin = new ExtractTextPlugin({
   filename: './css/app.[hash:8].css'
 });
 
-console.log('NOME DO DIRETÓRIO: ',__dirname);
-
 const config = {
   context: path.resolve(__dirname, 'source'),
   entry: {
@@ -116,7 +114,7 @@ const config = {
     // }),
     new CopyWebpackPlugin([
       {from:'image',to:'image'},
-      {from:'fonts',to:'fonts'}
+      {from:'fonts',to:'fonts'},
     ]),
     // new MomentLocalesPlugin(),
   ],

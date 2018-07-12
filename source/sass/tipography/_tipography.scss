@@ -1,3 +1,14 @@
+/**
+ * @stylesheet typography.css Estilos de Fontes
+ *
+ * @parent typography
+ *
+ * @description
+ * Estilos base para textos.
+ * 
+ * @demo demos/tipography.html
+ */
+
 @font-face {
   font-family: 'Roboto';
   src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'),
@@ -55,7 +66,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
+  font-family: Roboto;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -171,7 +182,7 @@ h6.text-primary,
 p.text-primary,
 a.text-primary,
 a.text-primary:hover {
-  color: var(--accent);
+  color: $primary;
 }
 
 .text-left{

@@ -1,0 +1,51 @@
+/**
+* @stylesheet layout.less Layout
+* @parent Styles.baseline-elements 3
+
+* @description
+* Layout classes are used to structure the main parts of a page.
+**/
+
+// Used to structure the main parts of a page, such as the header, the body, and the footer.
+.container {
+  width: 100%; //overriding standard container width
+  margin: 0 auto;
+}
+
+
+//helpers
+.clear {
+  clear: both;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.pull-right, .pullright, .float-right, .floatright {
+  float: right;
+}
+.pull-left, .pullleft, .float-left, .float-right {
+  float: left;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 7px 0;
+  width: 100%;
+  float: left;
+  background-color: #CCC;
+  p {
+    font-size: 13px;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 0;
+    color: #797979;
+  }
+}

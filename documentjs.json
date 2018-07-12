@@ -1,0 +1,18 @@
+{
+    "sites": {
+        "docs": {
+          "dest": "styleguide/dist",
+          "parent": "index",
+          "pageConfig": {
+            "page": "docs"
+          },
+          "glob": {
+            "pattern": "{styleguide/markdown,source}/**/*.{css,less,scss,md}"
+          }
+        }
+      },
+    "siteDefaults": {
+      "templates": "styleguide/styleguide-theme/templates",
+      "static": "styleguide/styleguide-theme/static"
+    }
+}
