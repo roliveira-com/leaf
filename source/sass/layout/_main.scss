@@ -20,11 +20,12 @@ nav .nav-menu__nav-item .nav-menu__nav-logo{
 
 nav .nav-menu__nav-item .nav-menu__brand{
   color: #FFF;
-  font-size: 25px;
-  font-weight: normal;
-  margin: 0 .5em 0 0;
+  font-size: 25px; 
+  font-weight: normal; 
+  margin: 0 1em;
   position: relative;
   text-transform: initial;
+  top: 5px;
 }
 
 nav .nav-menu__nav-brand{
@@ -46,9 +47,9 @@ nav .nav-menu__nav-link{
 }
 
 nav .nav-menu__nav-link:hover{
-  border-bottom: .3em solid $secondary;
+  border-bottom: 5px solid $secondary;
   color: $secondary;
-  padding: .8em 1em .9em; 
+  padding: .8em 1em 12px; 
   text-decoration: none;
 }
 

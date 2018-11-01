@@ -3,12 +3,13 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
+  background-color: #f1f1f1;
+  color: $strong;
   font-family: $font-primary;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
-  color: $strong;
-  background-color: #f1f1f1;
+  margin: 0;
 }
 input,
 button,
