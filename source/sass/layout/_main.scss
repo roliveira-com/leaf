@@ -40,6 +40,7 @@ nav .nav-menu__nav-brand{
 
 nav .nav-menu__nav-link{
   display: inline-block;
+  font-family: $font-secondary;
   font-weight: bold;
   padding: 1.2em 1em; 
   color: #ddd; 
@@ -47,7 +48,7 @@ nav .nav-menu__nav-link{
 }
 
 nav .nav-menu__nav-link:hover{
-  border-bottom: 5px solid $secondary;
+  border-bottom: 3px solid $secondary;
   color: $secondary;
   padding: .8em 1em 12px; 
   text-decoration: none;
@@ -115,10 +116,12 @@ header.home-header{
 }
 
 .expenses{
-  border-bottom: 1px solid #FFF;
   color: #FFF;
-  margin: 0 auto;
-  width: 320px;
+  display: inline-block;
+  font-family: $font-secondary;
+  // margin: 0 auto;
+  text-align: left;
+  // width: 320px;
 
 
   .expenses__label{
@@ -130,7 +133,7 @@ header.home-header{
 
   .expenses__data{
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 800;
     margin: -8px 0 0;
   }
 
@@ -138,9 +141,11 @@ header.home-header{
 
 .balance{
   color: #FFF;
-  display: inline-block;
-  margin: 0 auto;
-  width: 155px;
+  font-family: $font-secondary;
+  // display: inline-block;
+  // margin: 0 auto;
+  // width: 155px;
+  text-align: left;
 
   .balance__label{
     font-size: 12px;
@@ -158,10 +163,12 @@ header.home-header{
 
 .credito{
   color: #FFF;
-  display: inline-block;
-  margin: 0 auto;
-  width: 155px;
-
+  font-family: $font-secondary;
+  // display: inline-block;
+  // margin: 0 auto;
+  // width: 155px;
+  text-align: left;
+  
   .credito__label{
     font-size: 12px;
     margin: 10px 0 0;
@@ -194,17 +201,40 @@ header.home-header{
 }
 
 .data-line{
+  border-top: 1px solid #FFF;
+  display: flex;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 320px;
+  width: 300px;
 }
 
 .list__icon{
   width: 10%;
 
   .icon{
-    color: #004166;
+    color: $primary;
     font-size: 32px;
     font-weight: bold;
+
+    &.shopping{
+      color: #004166;
+    }
+
+    &.tasks{
+      color: #d65db1;
+    }
+
+    &.appointments{
+      color: #845ec2;
+    }
+
+    &.payments{
+      color: #ff9671;
+    }
+
+    &.income{
+      color: #2c73d2;
+    }
   }
 }
 
@@ -213,10 +243,31 @@ header.home-header{
   text-align: left;
 
   .description{
-    color: #004166;
+    color: $primary;
+    font-family: $font-secondary;
     font-size: 16px;
     font-weight: bold;
     margin: -3px 0 0;
+
+    &.shopping{
+      color: #004166;
+    }
+
+    &.tasks{
+      color: #d65db1;
+    }
+
+    &.appointments{
+      color: #845ec2;
+    }
+
+    &.payments{
+      color: #ff9671;
+    }
+
+    &.income{
+      color: #2c73d2;
+    }
   }
 
   .label{
@@ -246,11 +297,19 @@ header.home-header{
   text-align: right;
 
   .action{
-
     background-image: linear-gradient(to right bottom, #051937, #004166, #006d8f, #009cab, #00ccba);
+    background-position-y: 0;
     border-radius: 3px;
     color: #FFF;
     display: inline-block;
+    font-family: $font-secondary;
+    font-weight: bold;
     padding: 6px 15px;
+    transition: all ease-out .3s;
+  }
+
+  .action:hover{
+    background-position-y: 20px;
+    transition: all ease-out .3s;
   }
 }

@@ -97,7 +97,7 @@ hr {
 .list{
   background-color: #FFF;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);  
-  margin: -3em auto 0;
+  margin: -3em auto 1em;
   padding: 15px;
   width: 412px;
 
@@ -112,4 +112,8 @@ hr {
       border-bottom: 0;
     }
   }
+}
+
+.data-header{
+  text-align: center;
 }
