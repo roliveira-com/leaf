@@ -32,7 +32,7 @@ nav .nav-menu__nav-brand{
   display: inline-block;
   font-weight: bold;
   padding: .5em 1em; 
-  color: #ddd; 
+  color: white; 
   text-transform: uppercase;
   text-decoration: none;
   outline:none;
@@ -43,13 +43,13 @@ nav .nav-menu__nav-link{
   font-family: $font-secondary;
   font-weight: bold;
   padding: 1.2em 1em; 
-  color: #ddd; 
+  color: white; 
   text-transform: uppercase;
 }
 
 nav .nav-menu__nav-link:hover{
   border-bottom: 3px solid $secondary;
-  color: $secondary;
+  color: white;
   padding: .8em 1em 12px; 
   text-decoration: none;
 }
@@ -85,7 +85,9 @@ nav.nav-bottom .nav-menu__nav-link:hover{
 }
 
 header.home-header{
-  background-image: linear-gradient(to right top, #051937, #004166, #006d8f, #009cab, #00ccba);
+  background-image: linear-gradient(128deg, #66a6ff 0%, #89f7fe 100%);
+  // background-image: linear-gradient(to right top, #2af598 0%, #009efd 100%);
+  // background-image: linear-gradient(to right top, #051937, #004166, #006d8f, #009cab, #00ccba);
   padding: 0 0 4em;
 }
 
