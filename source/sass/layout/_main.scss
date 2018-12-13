@@ -88,6 +88,30 @@ header.home-header{
   padding: 1em 0 0 0;
 }
 
+.nav-scroll{
+  display: block;
+  background: #888;
+  overflow-x: auto;
+  padding: 15px 15px 10px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    height: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
+
+  .nav-scroll__item{
+    background-color: $accent;
+    display: inline-block;
+    height: 60px;;
+    width: 30%;
+    white-space: nowrap;
+  }
+}
+
 .content-header__text{
   color: #929292;
   margin: 15px 30px 5px 0;
